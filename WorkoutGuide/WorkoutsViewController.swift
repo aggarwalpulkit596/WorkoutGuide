@@ -8,8 +8,11 @@
 
 import UIKit
 
+var detailsArray = [String]()
+
 class WorkoutsViewController: UIViewController {
 
+    var workoutsDict = [String : [String]]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Choose Workout"
@@ -21,7 +24,9 @@ class WorkoutsViewController: UIViewController {
             
             if let validDict = dict
             {
+                workoutsDict = validDict as! [String :[String]]
                 setButtons(info : validDict)
+
             }
         }
 
@@ -44,7 +49,21 @@ class WorkoutsViewController: UIViewController {
                 button.layer.borderWidth = 1.5
                 button.layer.cornerRadius = 5
                 button.clipsToBounds = true
+                
+                button.addTarget(self, action: #selector(WorkoutsViewController.goToDetail(sender:)), for: .touchUpInside)
             }
         }
+    }
+    @objc func goToDetail(sender: UIButton)
+    {
+        if let title = sender.titleLabel?.text, let array = workoutsDict[title]
+        {
+            detailsArray = array
+            performSegue(withIdentifier: "details", sender: self)
+        }
+    }
+    @IBAction func close(segue: UIStoryboardSegue)
+    {
+        
     }
 }
