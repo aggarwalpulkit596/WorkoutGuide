@@ -16,6 +16,7 @@
 		E5EB6A8F213CE64900958DFF /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB6A8E213CE64900958DFF /* WorkoutsViewController.swift */; };
 		E5EB6A91213D0BD000958DFF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB6A90213D0BD000958DFF /* CustomButton.swift */; };
 		E5F2D345213DC89A0035AFCD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2D344213DC89A0035AFCD /* DetailsViewController.swift */; };
+		E5F2D347213DDC200035AFCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2D346213DDC200035AFCD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5EB6A8E213CE64900958DFF /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
 		E5EB6A90213D0BD000958DFF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E5F2D344213DC89A0035AFCD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E5F2D346213DDC200035AFCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E5EB6A8E213CE64900958DFF /* WorkoutsViewController.swift */,
 				E5EB6A90213D0BD000958DFF /* CustomButton.swift */,
 				E5F2D344213DC89A0035AFCD /* DetailsViewController.swift */,
+				E5F2D346213DDC200035AFCD /* Constants.swift */,
 			);
 			path = WorkoutGuide;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				E5EB6A7B213BB0CB00958DFF /* AppDelegate.swift in Sources */,
 				E5EB6A8F213CE64900958DFF /* WorkoutsViewController.swift in Sources */,
 				E5F2D345213DC89A0035AFCD /* DetailsViewController.swift in Sources */,
+				E5F2D347213DDC200035AFCD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

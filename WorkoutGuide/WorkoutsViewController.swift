@@ -43,9 +43,9 @@ class WorkoutsViewController: UIViewController {
             {
                 let button = allViews[i] as! UIButton
                 button.setTitle(titleArrays[i] as? String, for: .normal)
-                button.setTitleColor(UIColor(red: 0.99, green: 0.29, blue: 0.34, alpha: 1.00), for: .normal)
+                button.setTitleColor(appColor, for: .normal)
                 button.titleLabel?.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 20)
-                button.layer.borderColor = UIColor(red: 0.99, green: 0.29, blue: 0.34, alpha: 1.00).cgColor
+                button.layer.borderColor = appColor.cgColor
                 button.layer.borderWidth = 1.5
                 button.layer.cornerRadius = 5
                 button.clipsToBounds = true
