@@ -12,25 +12,7 @@ class WorkoutsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let allViews = view.subviews
-        
-        for singleView in allViews
-        {
-            if singleView.tag == 10 //is UIButton
-            {
-                let button = singleView as! UIButton
-                button.setTitleColor(UIColor.white, for: .normal)
-                button.titleLabel?.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 20)
-                button.layer.borderColor = UIColor(red: 0.99, green: 0.29, blue: 0.34, alpha: 1.00).cgColor
-                button.layer.borderWidth = 1.5
-                button.layer.cornerRadius = 5
-                button.clipsToBounds = true
-            }
-        }
-        
-        
-        /*
+        self.title = "Choose Workout"
         let path = Bundle.main.path(forResource: "Workouts", ofType: "plist")
         
         if let validPath = path
@@ -39,9 +21,30 @@ class WorkoutsViewController: UIViewController {
             
             if let validDict = dict
             {
-                print(validDict)
+                setButtons(info : validDict)
             }
-        }*/
+        }
 
+    }
+    func setButtons(info: NSDictionary)
+    {
+        let allViews = view.subviews
+        
+        let titleArrays = info.allKeys
+    
+        for i in 0..<allViews.count//singleView in allViews
+        {
+            if allViews[i].tag == 10 //is UIButton
+            {
+                let button = allViews[i] as! UIButton
+                button.setTitle(titleArrays[i] as? String, for: .normal)
+                button.setTitleColor(UIColor(red: 0.99, green: 0.29, blue: 0.34, alpha: 1.00), for: .normal)
+                button.titleLabel?.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 20)
+                button.layer.borderColor = UIColor(red: 0.99, green: 0.29, blue: 0.34, alpha: 1.00).cgColor
+                button.layer.borderWidth = 1.5
+                button.layer.cornerRadius = 5
+                button.clipsToBounds = true
+            }
+        }
     }
 }
