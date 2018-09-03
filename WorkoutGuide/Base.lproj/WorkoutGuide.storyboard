@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jumping" translatesAutoresizingMaskIntoConstraints="NO" id="EJe-Ox-t4O">
                                 <rect key="frame" x="67" y="91" width="240" height="184"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUh-5d-MfL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUh-5d-MfL" customClass="CustomButton" customModule="WorkoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="66" y="301" width="240" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="0UM-Mu-3mk"/>
@@ -31,7 +31,7 @@
                                     <segue destination="HxF-Ok-ddJ" kind="show" id="Ws1-5I-YYn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hj-d2-Nig">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hj-d2-Nig" customClass="CustomButton" customModule="WorkoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="66" y="363" width="240" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="GM5-rB-FCY"/>
@@ -41,14 +41,14 @@
                                     <segue destination="8ll-t7-IIl" kind="show" id="wuK-vU-cr1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-Yn-PDR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-Yn-PDR" customClass="CustomButton" customModule="WorkoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="66" y="425" width="240" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="xo5-Io-cZX"/>
                                 </constraints>
                                 <state key="normal" title="Settings"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvX-SN-3yJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvX-SN-3yJ" customClass="CustomButton" customModule="WorkoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="66" y="487" width="240" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="M24-mI-p7h"/>
@@ -87,39 +87,39 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Workouts View Controller-->
         <scene sceneID="hG5-X2-mui">
             <objects>
-                <viewController id="HxF-Ok-ddJ" sceneMemberID="viewController">
+                <viewController id="HxF-Ok-ddJ" customClass="WorkoutsViewController" customModule="WorkoutGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVZ-ex-nyZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5y-b3-Kdm">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5y-b3-Kdm">
                                 <rect key="frame" x="67" y="111" width="240" height="47.5"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7Q-Mu-sBY">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7Q-Mu-sBY">
                                 <rect key="frame" x="67" y="166.5" width="240" height="48"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azr-dG-WCk">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azr-dG-WCk">
                                 <rect key="frame" x="67" y="222.5" width="240" height="47.5"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCD-b0-Zej">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCD-b0-Zej">
                                 <rect key="frame" x="67" y="278" width="240" height="48"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO4-GI-1YT">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO4-GI-1YT">
                                 <rect key="frame" x="67" y="334" width="240" height="47.5"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH1-Eu-O3a">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH1-Eu-O3a">
                                 <rect key="frame" x="67" y="389.5" width="240" height="48"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-ui-N0g">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-ui-N0g">
                                 <rect key="frame" x="67" y="445.5" width="240" height="47.5"/>
                                 <state key="normal" title="Core Workouts"/>
                             </button>

@@ -12,6 +12,9 @@
 		E5EB6A80213BB0CB00958DFF /* WorkoutGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EB6A7E213BB0CB00958DFF /* WorkoutGuide.storyboard */; };
 		E5EB6A82213BB0CC00958DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EB6A81213BB0CC00958DFF /* Assets.xcassets */; };
 		E5EB6A85213BB0CC00958DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EB6A83213BB0CC00958DFF /* LaunchScreen.storyboard */; };
+		E5EB6A8D213CE55400958DFF /* Workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5EB6A8C213CE55400958DFF /* Workouts.plist */; };
+		E5EB6A8F213CE64900958DFF /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB6A8E213CE64900958DFF /* WorkoutsViewController.swift */; };
+		E5EB6A91213D0BD000958DFF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB6A90213D0BD000958DFF /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E5EB6A81213BB0CC00958DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5EB6A84213BB0CC00958DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5EB6A86213BB0CC00958DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5EB6A8C213CE55400958DFF /* Workouts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Workouts.plist; sourceTree = "<group>"; };
+		E5EB6A8E213CE64900958DFF /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		E5EB6A90213D0BD000958DFF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				E5EB6A81213BB0CC00958DFF /* Assets.xcassets */,
 				E5EB6A83213BB0CC00958DFF /* LaunchScreen.storyboard */,
 				E5EB6A86213BB0CC00958DFF /* Info.plist */,
+				E5EB6A8C213CE55400958DFF /* Workouts.plist */,
+				E5EB6A8E213CE64900958DFF /* WorkoutsViewController.swift */,
+				E5EB6A90213D0BD000958DFF /* CustomButton.swift */,
 			);
 			path = WorkoutGuide;
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			files = (
 				E5EB6A85213BB0CC00958DFF /* LaunchScreen.storyboard in Resources */,
 				E5EB6A82213BB0CC00958DFF /* Assets.xcassets in Resources */,
+				E5EB6A8D213CE55400958DFF /* Workouts.plist in Resources */,
 				E5EB6A80213BB0CB00958DFF /* WorkoutGuide.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EB6A91213D0BD000958DFF /* CustomButton.swift in Sources */,
 				E5EB6A7D213BB0CB00958DFF /* ViewController.swift in Sources */,
 				E5EB6A7B213BB0CB00958DFF /* AppDelegate.swift in Sources */,
+				E5EB6A8F213CE64900958DFF /* WorkoutsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
